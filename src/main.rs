@@ -12,10 +12,13 @@ const DESTINATION_ADDRESS: &str = "127.0.0.1:4711";
 /// Commmand names which expect a response.
 const RESPONSE_COMMANDS: &[&str] = &[
     "player.getPos",
+    "world.getBlock",
     "world.getBlockWithData",
     "world.getHeight",
+    "world.getBlocks",
     "world.getBlocksWithData",
     "world.getHeights",
+    "failCommand", // mcpp test case
 ];
 
 fn main() -> io::Result<()> {
